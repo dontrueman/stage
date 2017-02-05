@@ -21,7 +21,7 @@ from threading import Thread
 from telegram import Bot
 from telegram.ext import Dispatcher, MessageHandler, Updater
 
-TOKEN = 'your-token-here'
+TOKEN = '306067497:AAGgh-fw6qmI5OxtpFiBjmll37kIsyOQpXI'
 
 
 def example_handler(bot, update):
@@ -48,7 +48,7 @@ def setup(webhook_url=None):
     dp.add_handler(MessageHandler([], example_handler))  # Remove this line
     # Add your handlers here
     if webhook_url:
-        bot.set_webhook(webhook_url=webhook_url)
+        bot.set_webhook(webhook_url=https://api.preview.openshift.com/oapi/v1/namespaces/stage/buildconfigs/stage/webhooks/045468540c15446f/github)
         thread = Thread(target=dp.start, name='dispatcher')
         thread.start()
         return update_queue, bot
